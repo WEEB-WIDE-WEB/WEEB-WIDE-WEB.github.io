@@ -1,2 +1,2 @@
-# WEEB-WIDE-WEB.gtihub.io
-link: "WEEB-WIDE-WEB.gtihub.io"
+# WEEB-WIDE-WEB.github.io
+link: "WEEB-WIDE-WEB.github.io"
