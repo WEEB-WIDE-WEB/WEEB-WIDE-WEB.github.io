@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>登錄頁面</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #loginForm {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        background-color: #008CBA;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<form id="loginForm">
+    <input type="text" id="username" placeholder="用戶名" required>
+    <input type="password" id="password" placeholder="密碼" required>
+    <button type="button" onclick="checkCredentials()">登錄</button>
+</form>
+
+<script>
+    function checkCredentials() {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        if(username === 'admin' && password === '12345678') {
+            alert('登錄成功！');
+        } else {
+            alert('用戶名或密碼錯誤！');
+        }
+    }
+</script>
+
+</body>
+</html>
