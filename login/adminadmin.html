@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zack的個人主頁</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #ddd;
+            margin-bottom: 5px;
+            padding: 10px;
+        }
+
+        #loginButton {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 5px;
+        }
+
+        #loginButton:center {
+            background-color: #005f5f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="toolbar">
+        <span>歡迎，admin</span>
+    <form id="loginForm">
+        <!-- ...existing form elements... -->
+    </form>
+
+    <script>
+        function checkCredentials() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === 'admin' && password === '12345678') {
+                document.getElementById('toolbar').style.display = 'block';
+                document.getElementById('loginForm').style.display = 'none';
+            } else {
+                alert('用戶名或密碼錯誤！');
+            }
+        }
+    </script>
+    <header>
+        <h1>歡迎來到Zack的個人主頁</h1><a href="login/login.html" id="loginButton">登录</a>
+
+    </header>
+    <main>
+        <p>這是我的個人主頁，你可以在這裡了解更多關於我。</p>
+        <h2>我的興趣</h2>
+        <ul>
+            <li>編程</li>
+            <li>讀書</li>
+            <li>旅行</li>
+        </ul>
+    </main>
+</body>
+
+</html>
