@@ -3,6 +3,21 @@ body {
   color: #101010;
   background-color: #ffffff;
 }
+.container {
+  width: 1024px; /* Fixed width */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Elements inside the container also have fixed widths */
+.element {
+  width: 300px; /* Fixed width */
+  margin: 10px; /* Fixed margin */
+}
+
+/* Text sizes are fixed */
+.text {
+  font-size: 16px; /* Fixed font size */
+}
 
 .layout_padding {
   padding: 90px 0;
