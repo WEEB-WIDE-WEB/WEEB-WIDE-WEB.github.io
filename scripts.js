@@ -1,5 +1,5 @@
 $(document).ready(function() {
   $('#loginButton').click(function() {
-    window.location.href = 'login.html';
+    window.location.href = 'login/login.html';
   });
 });
