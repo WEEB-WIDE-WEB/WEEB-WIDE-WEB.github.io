@@ -1,90 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zack的個人主頁</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            background-color: #ddd;
-            margin-bottom: 5px;
-            padding: 10px;
-        }
-
-        #loginButton {
-            display: inline-block;
-            padding: 10px 20px;
-            color: black;
-            text-decoration: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 3px;
-        }
-
-        #loginButton:center {
-            background-color: #005f5f;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的個人主頁</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <div id="toolbar">
-        <span>歡迎，admin</span><a href="login.html" id="loginButton">登出</a>
-    <form id="loginForm">
-        <!-- ...existing form elements... -->
-    </form>
+<nav class="navbar">
+  <div class="container">
+    <ul class="nav-menu">
+      <li><a href="#achievements">學術成就</a></li>
+      <li><a href="#projects">開發過的作品</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">更多</a>
+        <div class="dropdown-content">
+          <a href="#contact">聯繫方式</a>
+          <a href="login/login.html">登入</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-    <script>
-        function checkCredentials() {
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
+<header class="header">
+  <div class="container">
+    <h1>歡迎來到我的個人主頁</h1>
+    <p>我是一名熱愛技術的開發者，喜歡探索最新的科技趨勢。</p>
+  </div>
+</header>
 
-            if (username === 'admin' && password === '12345678') {
-                document.getElementById('toolbar').style.display = 'block';
-                document.getElementById('loginForm').style.display = 'none';
-            } else {
-                alert('用戶名或密碼錯誤！');
-            }
-        }
-    </script>
-    <header>
-        <h1>歡迎來到Zack的個人主頁</h1>
+<section id="achievements" class="container">
+  <h2>學術成就</h2>
+  <p>這裡將展示我的學術成就...</p>
+</section>
 
-    </header>
-    <main>
-        <p>這是我的個人主頁，你可以在這裡了解更多關於我。</p>
-        <h2>我的興趣</h2>
-        <ul>
-            <li>編程</li>
-            <li>讀書</li>
-            <li>旅行</li>
-        </ul>
-    </main>
+<section id="projects" class="container">
+  <h2>開發過的作品</h2>
+  <p>這裡將展示我開發過的作品...</p>
+</section>
+
+<section id="contact" class="container">
+  <h2>聯繫方式</h2>
+  <p>這裡將展示我的聯繫方式...</p>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts.js"></script>
 </body>
-
 </html>
