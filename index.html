@@ -1,53 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zack的個人主頁</title>
-    <style>
-     
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>個人網頁</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <form id="loginForm">
-      
-    </form>
+<div class="container">
+  <h1>歡迎來到我的個人網頁</h1>
+  <button id="loginButton" class="animatedButton">登錄</button>
+</div>
 
-   
-
-    <header>
-        <h1>歡迎來到Zack的個人主頁</h1><a href="login/login.html" id="loginButton">登录</a>
-    </header>
-
-   
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-       
-
-        $(document).ready(function() {
-            function checkCredentials() {
-                var username = $('#username').val();
-                var password = $('#password').val();
-
-                if (username === 'admin' && password === '12345678') {
-                    $('#toolbar').show();
-                    $('#loginForm').hide();
-                } else {
-                    alert('用戶名或密碼錯誤！');
-                }
-            }
-
-        
-            $('#loginButton').click(function(event) {
-                event.preventDefault(); // This will prevent the default click action
-                checkCredentials();
-            });
-        });
-    </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts.js"></script>
 </body>
-
 </html>
